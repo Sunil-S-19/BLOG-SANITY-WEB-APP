@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/blog/:slug" children element={<SinglePost />} />
+        <Route path="/blog/:slug" element={<SinglePost />} />
 
         <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<Error />} />
